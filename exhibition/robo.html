@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Exhibition by Sinro Robotics, Kochi</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e2f, #131316);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 1.5rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00ffcc;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ff99;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #d4d4d4;
+        }
+
+        main {
+            background: rgba(25, 25, 35, 0.9);
+            border: 1px solid #00ffcc;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        video#background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .header-container img {
+            margin-bottom: 1rem;
+        }
+
+        .poster-container img {
+            margin-top: 1rem;
+            border: 3px solid #00ffcc;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+        }
+
+        footer {
+            background-color: #1e1e2f;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #00ffcc;
+            color: #ccc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ff99;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted loop>
+        <source src="/images/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+        <div class="header-container">
+            <img src="/images/logo.png" alt="Exhibition Logo" width="250px" height="50px">
+            <div>
+                <h1>Robotics Exhibition</h1>
+                <p>Join us at Sinro Robotics, Kochi, for an exciting showcase of cutting-edge robotic technology!</p>
+            </div>
+        </div>
+        <div class="poster-container">
+            <img src="/images/robotics_exhibition.png" height="350px" width="300px" alt="Event Poster">
+        </div>
+    </header>
+
+    <main>
+        <h1>Robotics Exhibition by Sinro Robotics</h1>
+        <h2>Event Details</h2>
+        <ul>
+            <li><strong>Entry Fee:</strong> Free for all participants</li>
+            <li><strong>Event Date:</strong> January 20, 2025</li>
+        </ul>
+        
+        <h2>Highlights:</h2>
+        <ol>
+            <li><strong>Exhibits:</strong>
+                <ul>
+                    <li>Interactive robot demonstrations</li>
+                    <li>Autonomous vehicles showcase</li>
+                    <li>AI-powered robotic systems</li>
+                </ul>
+            </li>
+            <li><strong>Workshops:</strong>
+                <ul>
+                    <li>Hands-on sessions on robot programming</li>
+                    <li>Building simple robots</li>
+                </ul>
+            </li>
+            <li><strong>Competitions:</strong>
+                <ul>
+                    <li>Robotics design challenge</li>
+                    <li>Maze-solving robot competition</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Contact Us</h2>
+        <p>For queries, reach out to us:</p>
+        <ul>
+            <li>Email: info@sinrorobotics.com</li>
+            <li>Phone: +91 98765 43210</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Robotics Exhibition by Sinro Robotics, Kochi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
