@@ -150,9 +150,15 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  transition: all 0.5s;
+  transition: transform 0.3s ease-in-out;
   z-index: 997;
 }
+#header.hidden {
+  transform: translateY(-100%);
+}
+
+
+
 
 #header.header-scrolled,
 #header.header-inner {
@@ -809,4 +815,5 @@ Responsive Adjustments for Smaller Devices
   #about p {
     font-size: 0.8rem;
   }
+}
 }

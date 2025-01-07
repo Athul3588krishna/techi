@@ -1,0 +1,28 @@
+/* Initially visible */
+#header {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  }
+  
+  /* Hide header (logo, college details, and navbar) when scrolling down */
+  #header.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  /* You can add additional styling for smoother transitions if needed */
+  #logo {
+    transition: opacity 0.3s ease;
+  }
+  
+  #logo.hidden {
+    opacity: 0;
+  }
+  
+  #navbar {
+    transition: opacity 0.3s ease;
+  }
+  
+  #navbar.hidden {
+    opacity: 0;
+  }
+  

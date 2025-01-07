@@ -1,0 +1,101 @@
+/* Section Styling */
+#exhibitions {
+    /* background-color: #2c3e50; */
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .section-header2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .section-header2 p {
+    color: #ccc;
+    font-size: 1.2rem;
+  }
+  
+  /* Box Styling */
+  .box2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    animation: scroll-left 20s linear infinite;
+    cursor: pointer;
+  }
+  
+  .box2:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Duplicate content for continuous scrolling */
+  .box2::after {
+    content: '';
+    display: inline-flex;
+    flex: none;
+  }
+  
+  /* Add content duplication for a smooth, seamless loop */
+  .box2 span {
+    display: inline-block;
+    min-width: 150px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .box2 span:hover {
+    transform: scale(1.2);
+    z-index: 10;
+  }
+  
+  .box2 img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .box2 span:hover img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .box2 img:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ensure continuous loop by duplicating the content */
+  .box2 {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+  }
+  
+  .box2 span {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 150px;
+  }
+  
+  /* Adjust the width of the container to handle multiple items */
+  #exhibitions {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
