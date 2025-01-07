@@ -144,7 +144,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   z-index: 997;
 }
 #header.hidden {
@@ -193,6 +193,7 @@ h6 {
 --------------------------------------------------------------*/
 .navbar {
   padding: 0;
+  position: relative; /* Ensure the navbar is positioned relative for dropdowns */
 }
 
 .navbar ul {
@@ -234,11 +235,12 @@ h6 {
   color: #fff;
 }
 
+/* Dropdown Menu */
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 12px;
-  top: calc(100% + 30px);
+  left: 0;
+  top: calc(100% + 10px); /* Adjusted to provide proper spacing */
   margin: 0;
   padding: 10px 0;
   z-index: 99;
@@ -256,6 +258,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
+  color: #060c22;
 }
 
 .navbar .dropdown ul a:hover {
@@ -280,27 +283,40 @@ h6 {
   visibility: visible;
 }
 
+/* Mobile Navigation */
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
   }
 
   .navbar ul {
     display: none;
-  }
-
-  .navbar-mobile {
-    position: fixed;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
     top: 0;
     right: 0;
     width: 250px;
     height: 100%;
-    background: #333;
-    transition: 0.3s;
-    z-index: 1000;
-    overflow-y: auto;
     padding-top: 20px;
     transform: translateX(100%);
+    z-index: 1000;
+  }
+
+  .navbar ul li {
+    padding: 10px 20px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    color: rgba(202, 206, 221, 0.8);
+  }
+
+  .navbar ul li a:hover {
+    color: orange;
   }
 
   .navbar-mobile.open {
@@ -316,9 +332,6 @@ h6 {
 .mobile-nav-toggle.active::before {
   content: '\2715'; /* Unicode for close icon */
 }
-
-
-
 
 
 

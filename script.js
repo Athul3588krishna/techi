@@ -1,12 +1,8 @@
-// Select the mobile nav toggle button and the navbar
+// Select the mobile toggle button and the navbar
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const navbarMobile = document.querySelector('.navbar-mobile');
+const navbar = document.getElementById('navbar');
 
-// Add a click event listener to the toggle button
+// When the mobile nav toggle button is clicked
 mobileNavToggle.addEventListener('click', () => {
-  // Toggle the "open" class for the mobile navbar
-  navbarMobile.classList.toggle('open');
-  
-  // Toggle the "active" class for the hamburger icon
-  mobileNavToggle.classList.toggle('active');
+  navbar.classList.toggle('mobile-nav-open');
 });
