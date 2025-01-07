@@ -91,6 +91,8 @@
     display: inline-block;
     flex: 0 0 auto;
     width: 150px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+
   }
   
   /* Adjust the width of the container to handle multiple items */

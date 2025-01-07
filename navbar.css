@@ -1,28 +1,77 @@
-/* Initially visible */
-#header {
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.navbar-container {
+  padding: 0;
+  position: relative;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-menu li {
+  position: relative;
+  padding: 10px 0 10px 12px;
+}
+
+.navbar-menu a {
+  color: rgba(202, 206, 221, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+  color: #fff;
+}
+
+/* Mobile Navigation */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+      display: block;
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
   }
-  
-  /* Hide header (logo, college details, and navbar) when scrolling down */
-  #header.hidden {
-    transform: translateY(-100%);
-    opacity: 0;
+
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      padding-top: 20px;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
   }
-  
-  /* You can add additional styling for smoother transitions if needed */
-  #logo {
-    transition: opacity 0.3s ease;
+
+  .navbar-menu li {
+      padding: 10px 20px;
   }
-  
-  #logo.hidden {
-    opacity: 0;
+
+  .navbar-menu a {
+      font-size: 16px;
+      color: rgba(202, 206, 221, 0.8);
   }
-  
-  #navbar {
-    transition: opacity 0.3s ease;
+
+  .navbar-menu a:hover {
+      color: orange;
   }
-  
-  #navbar.hidden {
-    opacity: 0;
+
+  .navbar-container.mobile-nav-open .navbar-menu {
+      display: flex;
+      transform: translateX(0);
   }
-  
+}
