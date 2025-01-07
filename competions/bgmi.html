@@ -35,6 +35,8 @@
             margin: 2rem auto;
             max-width: 1000px;
             line-height: 1.6;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+
         }
 
         video#background-video {
@@ -80,6 +82,18 @@
         .register-btn:hover {
             background-color: darkorange;
         }
+
+        .poster-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .poster-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+        }
     </style>
 </head>
 <body>
@@ -89,8 +103,12 @@
         Your browser does not support HTML5 video.
     </video>
     <header>
-        <h1>BGMI Squad Battle: Tech Fest Competition</h1>
-        <p>🀀 Get Ready to Drop In! 🀀</p>
+        <h1>BGMI Squad Battle</h1>
+        
+
+        <div class="poster-container">
+            <img src="/images/webpi/bgmi.webp" alt="Event Poster">
+        </div>
     </header>
     <main>
         <h2>Competition Details</h2>
@@ -156,7 +174,7 @@
         </ul>
     </main>
     <footer>
-        <p>&copy; 2025 BGMI Squad Battle: Tech Fest Competition. All rights reserved.</p>
+        <p> 2025 Tech Trinity - BGMI(Battlegrounds Mobile India).</p>
     </footer>
 </body>
 </html>

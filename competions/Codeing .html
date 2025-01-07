@@ -23,11 +23,15 @@
 
         main {
             background: rgba(0, 0, 0, 0.6);
-            color: #fff;
+            color: #ffffff;
             border-radius: 10px;
             padding: 2rem;
-        }
+            margin: 2rem auto;
+            max-width: 1000px;
+            line-height: 1.6;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
 
+        }
         video#background-video {
             position: fixed;
             top: 0;
@@ -62,6 +66,18 @@
         li {
             margin-bottom: 0.5rem;
         }
+
+        .poster-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .poster-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+        }
     </style>
 </head>
 <body>
@@ -75,12 +91,13 @@
         <div class="header-container">
             <img src="/images/logo.png" alt="Event Logo" width="250px" height="50px">
             <div>
-                <h1>Debugging Competition</h1>
+                <h1>BUG HUNT</h1>
+               
                 <p>Code to Compete, Solve to Win!</p>
             </div>
         </div>
         <div class="poster-container">
-            <img src="/images/2.png" height="350px" width="300px" alt="Event Poster">
+            <img src="/images/webpi/bug hunt.webp" alt="Event Poster">
         </div>
     </header>
 
@@ -146,7 +163,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Coding Competition. All rights reserved.</p>
+        <p>&copy;  2025 Tech Trinity - BUG HUNT</p>
     </footer>
 </body>
 </html>
