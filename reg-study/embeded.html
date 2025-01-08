@@ -29,7 +29,6 @@
             padding: 20px;
             margin: 50px auto;
             max-width: 800px;
-            /* background: rgba(255, 255, 255, 0.1); */
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
@@ -64,6 +63,13 @@
             }
         }
 
+        /* Responsive image */
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         /* iFrame Styling */
         iframe {
             width: 100%;
@@ -71,6 +77,32 @@
             border: none;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            iframe {
+                height: 60vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            iframe {
+                height: 50vh;
+            }
         }
     </style>
 </head>
@@ -82,7 +114,7 @@
     </video>
 
     <div class="container">
-        <img src="/images/trinity.png" height="300px" width="800px">
+        <img src="/images/trinity.png" alt="Logo">
         <h1>Register Now</h1>
         <p>Fill out the form below:</p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEqXEoXNkCMHLILaJwenDrrSTev7UXiZcwCT84IMzucamQzw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">
