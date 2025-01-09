@@ -1,6 +1,6 @@
 .footer {
     font-size: 14px;
-    background-color: black;
+    
     padding: 50px 0;
     color: #eee;
   }
@@ -47,9 +47,7 @@
     line-height: 1;
   }
   
-  .footer .footer-links ul a:hover {
-    color: orange;
-  }
+ 
   
   .footer .social-links a {
     display: flex;
@@ -76,18 +74,10 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .footer .credits {
+  .footer .developed {
     padding-top: 4px;
     text-align: center;
     font-size: 13px;
   }
   
-  .footer .credits a {
-    text-align: center;
-    font-size: 13px;
-    color: #ddd;
-  }
   
-  .footer .credits a:hover {
-    color: orange;
-  }
