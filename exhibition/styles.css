@@ -68,12 +68,13 @@
     object-fit: cover;
     border-radius: 15px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
   }
   
   .box2 span:hover img {
     width: 200px;
     height: 300px;
-    box-shadow: 0 8px 15px rgba(255, 0, 0, 0);
+    box-shadow: 0 8px 15px rgb(0, 238, 255);
     transform: translateY(-5px);
   }
   
