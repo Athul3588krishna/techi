@@ -134,18 +134,13 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-   /* Ensure the header stays at the top */
-  height: 95px;
+  height: 90px;
   left: 0;
   top: 0;
-  right: 0;
-  display: flex; /* Use flexbox for consistent alignment */
-  align-items: center; /* Vertically center the content */
-  justify-content: space-between; /* Distribute content evenly */
+  right:0;
   transition: transform 0.1s ease-in-out;
-  z-index: 997; /* Ensure it's above other content */
+  z-index: 997;
 }
-
 #header.hidden {
   transform: translateY(-100%);
 }
