@@ -134,12 +134,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  position: fixed; /* Ensure the header stays at the top */
-  height: 90px;
+   /* Ensure the header stays at the top */
+  height: 95px;
   left: 0;
   top: 0;
   right: 0;
-  /* Optional: Set a background to make it stand out */
   display: flex; /* Use flexbox for consistent alignment */
   align-items: center; /* Vertically center the content */
   justify-content: space-between; /* Distribute content evenly */
