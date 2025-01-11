@@ -32,6 +32,116 @@
       z-index: -1;
      
     }
+/* Base style for the hero announcement container */
+#hero1 {
+  position: fixed; /* Fix the container to the viewport */
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  width: 350px; /* Default width */
+  height: 150px; /* Default height */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8); /* Subtle background for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Style for the heading */
+#hero1 h2 {
+  text-align: center;
+  font-size: 18px; /* Default font size */
+  font-weight: bold;
+  color: wheat;
+  margin-bottom: 10px;
+}
+
+/* Style for the marquee container */
+#hero1 .marquee-container {
+  width: 100%;
+  height: 100px; /* Default height */
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: relative; /* Needed for child positioning */
+}
+
+/* Scrolling text container */
+#hero1 .marquee {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 5s linear infinite;
+}
+
+/* Style for individual announcements */
+#hero1 .marquee p {
+  font-size: 12px; /* Default font size */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* Keyframes for scroll effect */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #hero1 {
+    width: 300px; /* Adjusted width for tablets */
+    height: 130px; /* Adjusted height for tablets */
+    padding: 8px;
+  }
+
+  #hero1 h2 {
+    font-size: 16px; /* Slightly smaller font size */
+  }
+
+  #hero1 .marquee-container {
+    height: 90px; /* Adjusted height for tablets */
+  }
+
+  #hero1 .marquee p {
+    font-size: 11px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  #hero1 {
+    width: 90%; /* Full width for small screens */
+    bottom: 10px; /* Reduced bottom distance */
+    left: 5%; /* Center horizontally */
+    height: 120px; /* Reduced height for small screens */
+    padding: 6px;
+  }
+
+  #hero1 h2 {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  #hero1 .marquee-container {
+    height: 80px; /* Adjusted height for small screens */
+  }
+
+  #hero1 .marquee p {
+    font-size: 10px; /* Smaller font size */
+  }
+}
+
+
   </style>
 </head>
 
@@ -73,6 +183,22 @@
   </header>
 
   <section id="hero">
+    <section>
+    <div id="hero1" class="announcement-container">
+      <h2>Announcements</h2>
+      <div class="marquee-container">
+        <div class="marquee">
+          <p>TECH TRINITY website is officially launched by our Principal, Dr. Anil Sir on 10/01/2025 at 11:30 AM.</p>
+   
+        </div>
+      </div>
+    </div>
+    
+    </section>
+    
+    
+    
+    
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <img src="fest logo.png" alt="Not available" height="190px" width="190px">
       <h1 class="mb-4 pb-0">An Inter Collegiate<br>Tech Fest</h1>
@@ -90,6 +216,11 @@
       </h2>
 
     </div>
+    
+  </section>
+  <section>
+    
+    
   </section>
   <br>
   <br>
@@ -245,6 +376,10 @@
           </p>
         </div>
       </section>
+      
+
+      
+      
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer" style="bottom: 0;">
 

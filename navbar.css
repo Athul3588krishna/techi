@@ -162,3 +162,39 @@
 }
 
 
+.announcement-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.announcement-box p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.close-btn {
+  background-color: #f5c6cb;
+  color: #721c24;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #f1b0b7;
+}
