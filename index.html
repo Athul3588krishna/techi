@@ -33,10 +33,19 @@
      
     }
 /* Base style for the hero announcement container */
+/* Fixed position container */
+/* Parent container (set to relative for proper absolute positioning) */
+.section-container {
+  position: relative; /* Establish a positioning context */
+  height: 100vh; /* Full height of the viewport for demonstration */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Position container within the section */
 #hero1 {
-  position: fixed; /* Fix the container to the viewport */
-  bottom: 20px; /* Distance from the bottom */
-  left: 20px; /* Distance from the left */
+  position: absolute; /* Positioned relative to the nearest positioned ancestor */
+  bottom: 20px; /* Distance from the bottom of the section */
+  left: 20px; /* Distance from the left of the section */
   width: 350px; /* Default width */
   height: 150px; /* Default height */
   padding: 10px;
@@ -98,48 +107,6 @@
   }
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  #hero1 {
-    width: 300px; /* Adjusted width for tablets */
-    height: 130px; /* Adjusted height for tablets */
-    padding: 8px;
-  }
-
-  #hero1 h2 {
-    font-size: 16px; /* Slightly smaller font size */
-  }
-
-  #hero1 .marquee-container {
-    height: 90px; /* Adjusted height for tablets */
-  }
-
-  #hero1 .marquee p {
-    font-size: 11px; /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 480px) {
-  #hero1 {
-    width: 90%; /* Full width for small screens */
-    bottom: 10px; /* Reduced bottom distance */
-    left: 5%; /* Center horizontally */
-    height: 120px; /* Reduced height for small screens */
-    padding: 6px;
-  }
-
-  #hero1 h2 {
-    font-size: 14px; /* Smaller font size */
-  }
-
-  #hero1 .marquee-container {
-    height: 80px; /* Adjusted height for small screens */
-  }
-
-  #hero1 .marquee p {
-    font-size: 10px; /* Smaller font size */
-  }
-}
 
 
   </style>
