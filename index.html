@@ -105,12 +105,41 @@
   }
 }
 
+/* Responsive Fullscreen Intro Video */
+#intro-video {
+  position: fixed; /* Sticks to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensures the video covers the viewport without distortion */
+  z-index: 9999; /* Keeps the video on top */
+  background: #000; /* Fallback background in case the video doesn't load */
+}
+
+/* Main content hidden initially */
+#main-content {
+  display: none; /* Hidden until the video ends */
+}
+
+/* Media query for better control on smaller devices */
+@media (max-width: 768px) {
+  #intro-video {
+    object-fit: contain; /* Adjusts video to avoid excessive cropping on small screens */
+  }
+}
 
 
   </style>
 </head>
 
 <body>
+  <video id="intro-video" autoplay muted>
+    <source src="/images/INTRO.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  
  <!-- Background Video -->
   <video id="background-video" autoplay muted loop>
     <source src="/images/Background.mp4" type="video/mp4">

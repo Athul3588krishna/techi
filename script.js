@@ -22,6 +22,19 @@
         }
       });
       
-
+      const introVideo = document.getElementById('intro-video');
+      const mainContent = document.getElementById('main-content');
+  
+      introVideo.addEventListener('ended', () => {
+        // After the video ends, hide it and show the main content
+        introVideo.style.display = 'none';
+        mainContent.style.display = 'block';
+      });
+  
+      // Fallback: If the video doesn't end after 5 seconds (e.g., unsupported browser)
+      setTimeout(() => {
+        introVideo.style.display = 'none';
+        mainContent.style.display = 'block';
+      }, 8000);
 
   
