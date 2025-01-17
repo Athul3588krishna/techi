@@ -35,6 +35,6 @@
       setTimeout(() => {
         introVideo.style.display = 'none';
         mainContent.style.display = 'block';
-      }, 8000);
+      }, 5000);
 
   
