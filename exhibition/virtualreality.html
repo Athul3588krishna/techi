@@ -2,10 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality: Explore the Future</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            color: #fff;
+        }
+
+        header {
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            line-height: 1.6;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+
+        video#background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1rem;
+            color: #ccc;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .poster-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .poster-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+        }
+    </style>
 </head>
 <body>
-    <H1>VR</H1>
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted loop>
+        <source src="/images/Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <h1>Explore Virtual Reality</h1>
+                <p>Dive into the Immersive World of VR</p>
+            </div>
+        </div>
+        <div class="poster-container">
+            <img src="/images/exhibition/VR.webp" alt="Virtual Reality Event Poster">
+        </div>
+    </header>
+
+    <main>
+        <h1>Virtual Reality</h1>
+        <h2>Introduction to VR</h2>
+        <ul>
+            <li><strong>What is VR?</strong> Virtual Reality is a simulated experience that can be similar to or completely different from the real world.</li>
+            <li><strong>Applications:</strong> VR is used in gaming, education, healthcare, architecture, and entertainment.</li>
+        </ul>
+
+        <h2>Popular VR Technologies:</h2>
+        <ol>
+            <li><strong>Oculus Quest:</strong>
+                <ul>
+                    <li>A standalone VR headset offering an immersive experience.</li>
+                </ul>
+            </li>
+            <li><strong>HTC Vive:</strong>
+                <ul>
+                    <li>Known for its high-quality VR hardware and room-scale experiences.</li>
+                </ul>
+            </li>
+            <li><strong>PlayStation VR:</strong>
+                <ul>
+                    <li>Brings VR gaming to console users.</li>
+                </ul>
+            </li>
+            <li><strong>Google Cardboard:</strong>
+                <ul>
+                    <li>An affordable entry point to VR using smartphones.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Why Explore VR?</h2>
+        <ul>
+            <li>Creates immersive learning and training experiences.</li>
+            <li>Enhances entertainment with interactive environments.</li>
+            <li>Revolutionizes industries like real estate and healthcare.</li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Virtual Reality Explore. All rights reserved.</p>
+    </footer>
 </body>
 </html>
